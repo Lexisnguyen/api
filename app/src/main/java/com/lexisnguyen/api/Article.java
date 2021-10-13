@@ -27,6 +27,13 @@ public class Article implements Serializable {
         this.__v = __v;
     }
 
+    public Article(String title, String content, String imageUrl, String groupName) {
+        this.title = title;
+        this.content = content;
+        this.imageUrl = imageUrl;
+        this.groupName = groupName;
+    }
+
     @NonNull
     @Override
     public String toString() {

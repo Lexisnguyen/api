@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <EditText
+    android:id="@+id/editTextTitle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_margin="4dp"
+    android:hint="@string/info_title"
+    android:inputType="text"
+    android:importantForAutofill="no" />
+
+  <EditText
+    android:id="@+id/editTextGroupName"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/editTextTitle"
+    android:layout_margin="4dp"
+    android:hint="@string/info_group_name"
+    android:text="18dthc5_nhom4"
+    android:inputType="text"
+    android:importantForAutofill="no" />
+
+  <EditText
+    android:id="@+id/editTextContent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/editTextGroupName"
+    android:layout_margin="4dp"
+    android:hint="@string/info_content"
+    android:inputType="text"
+    android:importantForAutofill="no" />
+
+  <EditText
+    android:id="@+id/editTextImage"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/editTextContent"
+    android:layout_margin="4dp"
+    android:hint="@string/info_image"
+    android:inputType="textUri"
+    android:importantForAutofill="no" />
+
+  <Button
+    android:id="@+id/action_post"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/editTextImage"
+    android:layout_margin="4dp"
+    android:layout_alignParentEnd="true"
+    android:text="@string/action_post" />
+
+  <Button
+    android:id="@+id/action_cancel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/editTextImage"
+    android:layout_toStartOf="@id/action_post"
+    android:layout_margin="4dp"
+    android:text="@string/action_cancel" />
+
+</RelativeLayout>

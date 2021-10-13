@@ -3,4 +3,10 @@
   <string name="article_image">Article image</string>
   <string name="action_edit">Edit</string>
   <string name="action_delete">Delete</string>
+  <string name="info_title">Title</string>
+  <string name="info_group_name">Group name</string>
+  <string name="info_content">Content</string>
+  <string name="info_image">Image URL</string>
+  <string name="action_post">Post</string>
+  <string name="action_cancel">Cancel</string>
 </resources>
