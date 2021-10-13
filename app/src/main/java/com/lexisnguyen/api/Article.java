@@ -28,10 +28,14 @@ public class Article implements Serializable {
     }
 
     public Article(String title, String content, String imageUrl, String groupName) {
+        this._id = null;
         this.title = title;
         this.content = content;
         this.imageUrl = imageUrl;
         this.groupName = groupName;
+        this.createAt = null;
+        this.updateAt = null;
+        this.__v = 0;
     }
 
     @NonNull

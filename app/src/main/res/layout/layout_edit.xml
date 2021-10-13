@@ -12,7 +12,7 @@
     android:layout_height="wrap_content"
     android:layout_alignParentTop="true"
     android:layout_margin="4dp"
-    android:text="@string/info_post"
+    android:text="@string/info_put"
     android:textSize="24sp"
     android:textStyle="bold" />
 
@@ -47,20 +47,20 @@
     android:importantForAutofill="no" />
 
   <Button
-    android:id="@+id/action_post"
+    android:id="@+id/action_update"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_below="@id/editTextImage"
     android:layout_margin="4dp"
     android:layout_alignParentEnd="true"
-    android:text="@string/action_post" />
+    android:text="@string/action_update" />
 
   <Button
     android:id="@+id/action_cancel"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_below="@id/editTextImage"
-    android:layout_toStartOf="@id/action_post"
+    android:layout_toStartOf="@id/action_update"
     android:layout_margin="4dp"
     android:text="@string/action_cancel" />
 

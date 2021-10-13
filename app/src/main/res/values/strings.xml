@@ -9,4 +9,8 @@
   <string name="info_image">Image URL</string>
   <string name="action_post">Post</string>
   <string name="action_cancel">Cancel</string>
+  <string name="info_post">Post a new Article</string>
+  <string name="info_put">Edit this Article</string>
+  <string name="action_update">Update</string>
+  <string name="info_articles">Articles</string>
 </resources>

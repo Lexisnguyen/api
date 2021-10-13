@@ -12,15 +12,15 @@ import retrofit2.http.Path;
 
 public interface ApiService {
 
-    @GET("article/18dthc5_nhom4")
+    @GET("article/18dthc5_nhom11")
     Call<ArticleList> getArticles();
 
     @POST("article")
     Call<Article> postArticle(@Body Article article);
 
-    @PUT("article/{_id}")
-    Call<Article> putArticle(@Path("_id") String _id);
+    @PUT("article/{id}")
+    Call<Article> putArticle(@Path("id") String id, @Body Article article);
 
-    @DELETE("article/{_id}")
-    Call<Article> deleteArticle(@Path("_id") String _id);
+    @DELETE("article/{id}")
+    Call<Article> deleteArticle(@Path("id") String id);
 }

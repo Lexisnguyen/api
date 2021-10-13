@@ -39,12 +39,14 @@ public class ArticleAdapter extends ArrayAdapter<Article> {
         RelativeLayout articleLayout = view.findViewById(R.id.articleLayout);
         ImageView imageView = view.findViewById(R.id.imageView);
         TextView textView = view.findViewById(R.id.textView);
+        TextView textViewContent = view.findViewById(R.id.textViewContent);
 
         // Change elements' content
         Article article = articles.get(position);
         Picasso.get().load(article.getImageUrl())
                 .into(imageView);
         textView.setText(article.getTitle());
+        textViewContent.setText(article.getContent());
 
         // Click events
         articleLayout.setOnClickListener((v) -> onClick(v, article));

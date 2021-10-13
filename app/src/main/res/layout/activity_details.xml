@@ -30,7 +30,7 @@
         android:textSize="16sp"
         android:textStyle="bold"
         android:textAlignment="center"
-        tools:text="18dthc5_nhom4" />
+        tools:text="18dthc5_nhom11" />
 
       <ImageView
         android:id="@+id/imageView"
