@@ -50,6 +50,10 @@ public class DetailsActivity extends AppCompatActivity {
         // Data
         Intent intent = getIntent();
         article = (Article) intent.getSerializableExtra("article");
+        updateArticle(article);
+    }
+
+    private void updateArticle(Article article) {
         toolbar.setTitle(article.getTitle());
         textViewGroup.setText(article.getGroupName());
         Picasso.get().load(article.getImageUrl())
@@ -73,6 +77,7 @@ public class DetailsActivity extends AppCompatActivity {
         } else {
             return false;
         }
+
         call.enqueue(new Callback<Article>() {
             @Override
             public void onResponse(@NonNull Call<Article> call, @NonNull Response<Article> response) {
@@ -89,7 +94,7 @@ public class DetailsActivity extends AppCompatActivity {
                 }
 
                 if (item.getItemId() == R.id.action_edit) {
-
+                    updateArticle(response.body());
                 }
             }
 
